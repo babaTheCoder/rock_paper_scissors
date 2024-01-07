@@ -19,6 +19,7 @@ function playRound(playerSelection, computerSelection) {
   }
 
   if (playerSelection === "paper" && computerSelection === "rock") {
+    playerScore++;
     return `You win! Paper beats Rock`;
   } else if (playerSelection === "rock" && computerSelection === "paper") {
     computerScore++;
