@@ -1,104 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
 
 body,
 html,
 * {
-    padding: 0;
-    margin: 0;
-    line-height: 1.65;
-    color: chocolate;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    box-sizing: border-box;
-    text-align: centers;
+  padding: 0;
+  margin: 0;
+  line-height: 1.65;
+  color: chocolate;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  box-sizing: border-box;
+  text-align: centers;
 }
 
-
-
 body {
-    width: 100vw;
-    height: 100vh;
-    background-color: darkslategrey;
+  width: 100vw;
+  height: 100vh;
+  background-color: darkslategrey;
 }
 
 header {
-    display: flex;
-    gap: 1em;
-    flex-direction: column;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
 }
 
-header>h1 {
-    text-align: center;
+header > h1 {
+  text-align: center;
 }
 
 .rotate {
-    width: 150px;
-    height: 100%;
-    object-fit: contain;
-    animation: loading 5s linear infinite;
+  width: 150px;
+  height: 100%;
+  object-fit: contain;
+  animation: loading 5s linear infinite;
 }
 
 @keyframes loading {
-    0% {
-        transform: rotate(0);
-    }
+  0% {
+    transform: rotate(0);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
-
 
 .icon {
-    width: 150px;
-    height: 100%;
-    object-fit: contain;
+  width: 150px;
+  height: 100%;
+  object-fit: contain;
 }
 .data > div > h3 {
-    text-align: center;
-    font-size: 22px;
+  text-align: center;
+  font-size: 22px;
 }
 
 .data > div > h3 > .change {
-    color:cornflowerblue;
+  color: cornflowerblue;
 }
 
 .data {
-    display: flex;
-    margin-inline: 4em 2em;
-    justify-content: space-around;
+  display: flex;
+  margin-inline: 4em 2em;
+  justify-content: space-around;
 }
 
 main {
-    margin-top: 5em;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10%;
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10%;
 }
 
-main>img {
-    max-width: 150px;
-    object-fit: contain;
-    transition: ease-out 500ms;
+main > img {
+  max-width: 150px;
+  object-fit: contain;
+  transition: ease-out 500ms;
 }
 
-
-main>img:hover,
-main>img:active {
-    transform: scale(1.05);
+main > img:hover,
+main > img:active {
+  transform: scale(1.05);
 }
 
-.announce{
-    padding-top: 2em;
-    color:crimson;
-    font-size: 24px;
-    text-align: center;
+.announce {
+  padding-top: 1em;
+  color: crimson;
+  font-size: 24px;
+  text-align: center;
+}
+
+#resetBtn {
+  display: block;
+  margin: 0 auto;
+  padding: 3px 5px;
+  border: transparent;
+  border-radius: 5px;
+  font-size: 16x;
+  color: crimson;
 }
 
 footer {
-    text-align: center;
-    padding-top: 2em;
-    background-color:  rgba(47, 79, 79, 0.555);
+  text-align: center;
+  padding-top: 2em;
+  background-color: rgba(47, 79, 79, 0.555);
 }

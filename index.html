@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RPS Game by ^_KONLAN</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>ROCK, PAPER, SCISSORS GAME</h1>
-        <div class="data">
-            <div>
-                <img src="./images/user.png" alt="User" class="icon">
-                <h3 id="userScore">Score: <span class="change">0</span></h3>
-            </div>
-            <div>
-            <img src="./images/rock-paper-scissors.png" alt="rock, paper, scissors" class="rotate">
-            <h3>Versus</h3>
+      <h1>ROCK, PAPER, SCISSORS GAME</h1>
+      <div class="data">
+        <div>
+          <img src="./images/user.png" alt="User" class="icon" />
+          <h3 id="userScore">
+            Score: <span class="change" id="playerChange">0</span>
+          </h3>
         </div>
         <div>
-            <img src="./images/bot.png" alt="Computer" class="icon">
-            <h3 id="computerScore">Score: <span class="change">0</span></h3>
+          <img
+            src="./images/rock-paper-scissors.png"
+            alt="rock, paper, scissors"
+            class="rotate"
+          />
+          <h3>Versus</h3>
         </div>
+        <div>
+          <img src="./images/bot.png" alt="Computer" class="icon" />
+          <h3 id="computerScore">
+            Score: <span class="change" id="computerChange">0</span>
+          </h3>
         </div>
+      </div>
     </header>
     <main>
-        <img src="./images/fist.png" alt="Rock">
-        <img src="./images/hand-paper.png" alt="Paper">
-        <img src="./images/scissor.png" alt="scissors">
+      <img src="./images/fist.png" alt="Rock" id="rock" />
+      <img src="./images/hand-paper.png" alt="Paper" id="paper" />
+      <img src="./images/scissor.png" alt="scissors" id="scissor" />
     </main>
-    <div id="announce" class="announce">
-        ... wins
-    </div>
+    <div id="announce" class="announce">... wins</div>
+    <button id="resetBtn">Reset</button>
 
     <footer>
-        <h5>Created by Mark Konlan for Odin Project</h5>
+      <h5>Created by Mark Konlan for Odin Project</h5>
     </footer>
     <script src="./index.js"></script>
-</body>
-
+  </body>
 </html>
