@@ -1,3 +1,4 @@
 # rock_paper_scissors
 
-#changes made in new branch
+visit live site at:
+https://babathecoder.github.io/rock_paper_scissors/
